@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
         // primarySwatch: Colors.red,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      initialRoute: RoutePage.HOME_ROUTE,
+      initialRoute: RoutePage.NAVIGATION_ROUTE,
       getPages: RoutePage.getPageList,
     );
   }

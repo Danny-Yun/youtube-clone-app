@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class Home extends StatelessWidget {
-  const Home({Key? key}) : super(key: key);
+class Explore extends StatelessWidget {
+  const Explore({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +17,7 @@ class Home extends StatelessWidget {
 
   Widget _body() {
     return Center(
-      child: Text('홈'),
+      child: Text('탐색'),
     );
   }
 }
