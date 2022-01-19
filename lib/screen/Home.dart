@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:youtube_clone_app/router/RoutePage.dart';
 import 'package:youtube_clone_app/widgets/CustomAppBar.dart';
+import 'package:youtube_clone_app/widgets/VideoWidget.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
@@ -20,11 +22,18 @@ class Home extends StatelessWidget {
           SliverList(
             delegate: SliverChildBuilderDelegate(
               (context, index) {
-                return Padding(
-                  padding: const EdgeInsets.only(bottom: 10),
-                  child: Container(
-                    height: 200,
-                    color: Colors.grey,
+                return GestureDetector(
+                  onTap: () {
+                    RoutePage.movePageWithArgument(
+                        RoutePage.VIDEO_DETAIL, '13');
+                  },
+                  child: Padding(
+                    padding: const EdgeInsets.only(bottom: 10),
+                    child: Container(
+                      // height: 250,
+                      // color: Colors.grey,
+                      child: VideoWidget(),
+                    ),
                   ),
                 );
               },
